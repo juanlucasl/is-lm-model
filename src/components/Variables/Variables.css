@@ -1,0 +1,14 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+.variables {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.variables__header h2 {
+  margin-bottom: 0.5rem;
+}
+
+.variables__header var {
+  font-style: normal;
+}

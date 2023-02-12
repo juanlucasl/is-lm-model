@@ -1,13 +1,36 @@
-body {
+/* SPDX-License-Identifier: Apache-2.0 */
+/* Normalize css */
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+}
+
+html {
+  /* Set default root font-size to 10px (62.5% of 16px) to make it easier to work with rems for responsiveness */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.2rem;
+  padding: 1rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+code var {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
