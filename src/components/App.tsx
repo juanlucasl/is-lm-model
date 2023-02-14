@@ -8,8 +8,16 @@ import {
   CONSUMO_AUTONOMO,
   PROPENSION_MARGINAL_A_CONSUMIR,
   SENSIBILIDAD_DE_LA_DEMANDA_MONETARIA_AL_INTERES,
+  TAXES_INCREASE_DESCRIPTION,
+  MONEY_SUPPLY_DECREASE_DESCRIPTION,
+  MONEY_SUPPLY_INCREASE_DESCRIPTION,
+  PUBLIC_EXPENDITURE_INCREASE_DESCRIPTION,
+  INVESTMENT_INCREASE_DESCRIPTION,
+  INVESTMENT_DECREASE_DESCRIPTION,
+  PUBLIC_EXPENDITURE_DECREASE_DESCRIPTION,
+  TAXES_DECREASE_DESCRIPTION,
 } from "../constants";
-import { Variable } from "./Variables/Variables";
+import { Variable } from "../models";
 
 function App() {
   /**
@@ -21,6 +29,9 @@ function App() {
    * Gasto Publico (G): Bienes y servicios comprados por el Estado.
    *
    * Impuestos (I): Impuestos cobrados por el Estado.
+   *
+   * Oferta Monetaria (M): Es la suma de los billetes y monedas en poder del público, más los
+   * depósitos a la vista en el sistema bancario.
    */
 
   const [inversion, setInversion] = useState(50);
@@ -42,27 +53,35 @@ function App() {
 
   const variablesIS: Variable[] = [
     {
-      state: inversion,
-      setState: setInversion,
-      label: "Inversión (I)",
-    },
-    {
-      state: gastoPublico,
-      setState: setGastoPublico,
-      label: "Gasto Público (G)",
-    },
-    {
-      state: impuestos,
-      setState: setImpuestos,
+      value: impuestos,
+      setValue: setImpuestos,
       label: "Impuestos (T)",
+      increaseDescription: TAXES_INCREASE_DESCRIPTION,
+      decreaseDescription: TAXES_DECREASE_DESCRIPTION,
+    },
+    {
+      value: inversion,
+      setValue: setInversion,
+      label: "Inversión (I)",
+      increaseDescription: INVESTMENT_INCREASE_DESCRIPTION,
+      decreaseDescription: INVESTMENT_DECREASE_DESCRIPTION,
+    },
+    {
+      value: gastoPublico,
+      setValue: setGastoPublico,
+      label: "Gasto Público (G)",
+      increaseDescription: PUBLIC_EXPENDITURE_INCREASE_DESCRIPTION,
+      decreaseDescription: PUBLIC_EXPENDITURE_DECREASE_DESCRIPTION,
     },
   ];
 
   const variablesLM: Variable[] = [
     {
-      state: ofertaMonetaria,
-      setState: setOfertaMonetaria,
+      value: ofertaMonetaria,
+      setValue: setOfertaMonetaria,
       label: "Oferta Monetaria (M)",
+      increaseDescription: MONEY_SUPPLY_INCREASE_DESCRIPTION,
+      decreaseDescription: MONEY_SUPPLY_DECREASE_DESCRIPTION,
     },
   ];
 

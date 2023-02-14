@@ -2,12 +2,7 @@
 import "./Variables.css";
 import React from "react";
 import VariableInput from "./VariableInput";
-
-export interface Variable {
-  state: number;
-  setState: (value: number) => void;
-  label: string;
-}
+import { Variable } from "../../models";
 
 interface VariablesProps {
   variables: Variable[];
@@ -28,8 +23,8 @@ export const Variables: React.FC<VariablesProps> = ({ variables, title, descript
         {description && <var>{description}</var>}
       </div>
     )}
-    {variables.map(({ state, setState, label }) => (
-      <VariableInput key={label} label={label} step={5} value={state} setValue={setState} />
+    {variables.map((variable) => (
+      <VariableInput variable={variable} />
     ))}
   </section>
 );
