@@ -2,6 +2,9 @@
 
 export const GRAPH_SIZE = 500;
 
+export const MAX_VALUE = GRAPH_SIZE;
+export const MIN_VALUE = -100;
+
 /**
  * Propension Marginal a Consumir: Indica como una unidad más de renta disponible afecta al
  * consumo.

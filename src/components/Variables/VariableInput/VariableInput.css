@@ -37,3 +37,11 @@
 .arrow__downwards:active {
   transform: translateY(3px);
 }
+
+.arrow--disabled {
+  color: gray;
+}
+
+.arrow--disabled:active {
+  transform: none;
+}
