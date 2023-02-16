@@ -95,9 +95,9 @@ const FunctionsDrawer: React.FC<FunctionsDrawerProps> = ({
     }
 
     // Draw the axis labels
-    ctx.font = "1rem sans-serif";
-    ctx.fillText(verticalAxisLabel, 10, 10);
-    ctx.fillText(horizontalAxisLabel, canvas.width - 10, canvas.height - 10);
+    ctx.font = "1.6rem sans-serif";
+    ctx.fillText(verticalAxisLabel, 10, 15);
+    ctx.fillText(horizontalAxisLabel, canvas.width - 15, canvas.height - 10);
   }, [functionsToDraw, horizontalAxisLabel, verticalAxisLabel]);
 
   return (

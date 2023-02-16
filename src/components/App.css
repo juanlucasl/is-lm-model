@@ -1,4 +1,9 @@
 /* SPDX-License-Identifier: Apache-2.0 */
+.App {
+  margin: 0 auto;
+  max-width: max-content;
+}
+
 .App__functions-section {
   display: flex;
   flex-direction: row;

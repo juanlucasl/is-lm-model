@@ -95,7 +95,7 @@ export const MONEY_SUPPLY_INCREASE_DESCRIPTION = `
 
 export const MONEY_SUPPLY_DECREASE_DESCRIPTION = `
   <p>
-    Menor oferta de dinero hace subir su precio, reflejado en el interés{" "}
+    Menor oferta de dinero hace subir su precio, reflejado en el interés
     <ul>
       <li>${INTEREST_RATE_UP}</li>
     </ul>
