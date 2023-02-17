@@ -5,11 +5,11 @@ import { Tooltip } from "react-tooltip";
 import { Variable } from "../../../models";
 import { MAX_VALUE, MIN_VALUE } from "../../../constants";
 
+export const STEP = 5;
+
 interface InputProps {
   variable: Variable;
 }
-
-const STEP = 5;
 
 const removeWhitespaceSpecialCharsAndMakeLower = (string: string) =>
   string.replace(/[\W\s]/gi, "").toLowerCase();
@@ -17,7 +17,6 @@ const removeWhitespaceSpecialCharsAndMakeLower = (string: string) =>
 const VariableInput: React.FC<InputProps> = ({
   variable: { value, setValue, label, increaseDescription, decreaseDescription },
 }) => {
-
   const isIncreaseDisabled = () => {
     return value > MAX_VALUE - STEP;
   };
@@ -40,17 +39,25 @@ const VariableInput: React.FC<InputProps> = ({
     <div className="variable-input">
       <span>{label}</span>
       <div
+        aria-disabled={isIncreaseDisabled()}
+        aria-label={`+ ${label}`}
         className={`arrow arrow__upwards ${isIncreaseDisabled() ? "arrow--disabled" : ""}`}
+        data-testid="arrow-increase"
         data-tooltip-html={increaseDescription as string}
         id={`${removeWhitespaceSpecialCharsAndMakeLower(label)}-increase`}
+        role="button"
         onClick={() => handleIncrease()}
       >
         &uarr;
       </div>
       <div
+        aria-disabled={isDecreaseDisabled()}
+        aria-label={`- ${label}`}
         className={`arrow arrow__downwards ${isDecreaseDisabled() ? "arrow--disabled" : ""}`}
+        data-testid="arrow-decrease"
         data-tooltip-html={decreaseDescription as string}
         id={`${removeWhitespaceSpecialCharsAndMakeLower(label)}-decrease`}
+        role="button"
         onClick={() => handleDecrease()}
       >
         &darr;

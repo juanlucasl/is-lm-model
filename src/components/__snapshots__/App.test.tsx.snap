@@ -1,0 +1,744 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders correctly 1`] = `
+<div>
+  <article
+    class="App"
+  >
+    <h1>
+      IS-LM Model
+    </h1>
+    <section
+      class="App__functions-section"
+    >
+      <canvas
+        aria-label="IS-LM"
+        class="functions-drawer"
+        height="500"
+        role="img"
+        width="500"
+      />
+      <section
+        class="App__variables-section"
+      >
+        <section
+          class="variables"
+        >
+          <div
+            class="variables__header"
+          >
+            <h2>
+              IS Curve
+            </h2>
+            <var>
+              Y = C(Y-T) + I(Y, i) + G
+            </var>
+          </div>
+          <div
+            class="variable-input"
+          >
+            <span>
+              Taxes (T)
+            </span>
+            <div
+              aria-disabled="false"
+              aria-label="+ Taxes (T)"
+              class="arrow arrow__upwards "
+              data-testid="arrow-increase"
+              data-tooltip-html="
+    <p>
+      The government charges more taxes and people have less surplus income to demand goods
+      <ul>
+        <li>&darr; Consumption (C)</li>
+        <li>&darr; Interest Rate (i)</li>
+        <li>&darr; Output or GDP (Y) (In equilibrium Y = Z (Demand for goods))</li>
+        <li>&larr; The IS Curve shifts to the left</li>
+      </ul>
+    </p>
+  "
+              id="taxest-increase"
+              role="button"
+            >
+              ↑
+            </div>
+            <div
+              aria-disabled="false"
+              aria-label="- Taxes (T)"
+              class="arrow arrow__downwards "
+              data-testid="arrow-decrease"
+              data-tooltip-html="
+    <p>
+      The government charges less taxes and people have more surplus income to demand goods
+      <ul>
+        <li>&uarr; Consumption (C)</li>
+        <li>&uarr; Interest Rate (i)</li>
+        <li>&uarr; Output or GDP (Y) (In equilibrium Y = Z (Demand for goods))</li>
+        <li>&rarr; The IS Curve shifts to the right</li>
+      </ul>
+    </p>
+  "
+              id="taxest-decrease"
+              role="button"
+            >
+              ↓
+            </div>
+          </div>
+          <div
+            class="variable-input"
+          >
+            <span>
+              Investment (I)
+            </span>
+            <div
+              aria-disabled="false"
+              aria-label="+ Investment (I)"
+              class="arrow arrow__upwards "
+              data-testid="arrow-increase"
+              data-tooltip-html="
+    <p>
+      Higher demand for capital goods, hence higher Aggregate Demand
+      <ul>
+        <li>&uarr; Consumption (C)</li>
+        <li>&uarr; Interest Rate (i)</li>
+        <li>&uarr; Output or GDP (Y) (In equilibrium Y = Z (Demand for goods))</li>
+        <li>&rarr; The IS Curve shifts to the right</li>
+      </ul>
+    </p>
+  "
+              id="investmenti-increase"
+              role="button"
+            >
+              ↑
+            </div>
+            <div
+              aria-disabled="false"
+              aria-label="- Investment (I)"
+              class="arrow arrow__downwards "
+              data-testid="arrow-decrease"
+              data-tooltip-html="
+    <p>
+      Lower demand for capital goods, hence lower Aggregate Demand
+      <ul>
+        <li>&darr; Consumption (C)</li>
+        <li>&darr; Interest Rate (i)</li>
+        <li>&darr; Output or GDP (Y) (In equilibrium Y = Z (Demand for goods))</li>
+        <li>&larr; The IS Curve shifts to the left</li>
+      </ul>
+    </p>
+  "
+              id="investmenti-decrease"
+              role="button"
+            >
+              ↓
+            </div>
+          </div>
+          <div
+            class="variable-input"
+          >
+            <span>
+              Public Expenditure (G)
+            </span>
+            <div
+              aria-disabled="false"
+              aria-label="+ Public Expenditure (G)"
+              class="arrow arrow__upwards "
+              data-testid="arrow-increase"
+              data-tooltip-html="
+    <p>
+      The government demands more goods and services, hence higher Aggregate Demand
+      <ul>
+        <li>&uarr; Consumption (C)</li>
+        <li>&uarr; Interest Rate (i)</li>
+        <li>&uarr; Output or GDP (Y) (In equilibrium Y = Z (Demand for goods))</li>
+        <li>&rarr; The IS Curve shifts to the right</li>
+      </ul>
+    </p>
+  "
+              id="publicexpenditureg-increase"
+              role="button"
+            >
+              ↑
+            </div>
+            <div
+              aria-disabled="false"
+              aria-label="- Public Expenditure (G)"
+              class="arrow arrow__downwards "
+              data-testid="arrow-decrease"
+              data-tooltip-html="
+    <p>
+      The government demands fewer goods and services, hence lower Aggregate Demand
+      <ul>
+        <li>&darr; Consumption (C)</li>
+        <li>&darr; Interest Rate (i)</li>
+        <li>&darr; Output or GDP (Y) (In equilibrium Y = Z (Demand for goods))</li>
+        <li>&larr; The IS Curve shifts to the left</li>
+      </ul>
+    </p>
+  "
+              id="publicexpenditureg-decrease"
+              role="button"
+            >
+              ↓
+            </div>
+          </div>
+        </section>
+        <section
+          class="variables"
+        >
+          <div
+            class="variables__header"
+          >
+            <h2>
+              LM Curve
+            </h2>
+            <var>
+              M/P = Y ⋅ L(i)
+            </var>
+          </div>
+          <div
+            class="variable-input"
+          >
+            <span>
+              Money Supply (M)
+            </span>
+            <div
+              aria-disabled="false"
+              aria-label="+ Money Supply (M)"
+              class="arrow arrow__upwards "
+              data-testid="arrow-increase"
+              data-tooltip-html="
+    <p>
+      Increased money supply drives down the price of money, reflected in interest rates
+      <ul>
+        <li>&darr; Interest Rate (i)</li>
+        <li>&rarr; The LM Curve shifts to the right</li>
+      </ul>
+    </p>
+  "
+              id="moneysupplym-increase"
+              role="button"
+            >
+              ↑
+            </div>
+            <div
+              aria-disabled="false"
+              aria-label="- Money Supply (M)"
+              class="arrow arrow__downwards "
+              data-testid="arrow-decrease"
+              data-tooltip-html="
+    <p>
+      Lower money supply drives up the price of money, reflected in interest rates.
+      <ul>
+        <li>&uarr; Interest Rate (i)</li>
+        <li>&larr; The LM Curve shifts to the left</li>
+      </ul>
+    </p>
+  "
+              id="moneysupplym-decrease"
+              role="button"
+            >
+              ↓
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+  </article>
+</div>
+`;
+
+exports[`App renders correctly with English locale 1`] = `
+<div>
+  <article
+    class="App"
+  >
+    <h1>
+      IS-LM Model
+    </h1>
+    <section
+      class="App__functions-section"
+    >
+      <canvas
+        aria-label="IS-LM"
+        class="functions-drawer"
+        height="500"
+        role="img"
+        width="500"
+      />
+      <section
+        class="App__variables-section"
+      >
+        <section
+          class="variables"
+        >
+          <div
+            class="variables__header"
+          >
+            <h2>
+              IS Curve
+            </h2>
+            <var>
+              Y = C(Y-T) + I(Y, i) + G
+            </var>
+          </div>
+          <div
+            class="variable-input"
+          >
+            <span>
+              Taxes (T)
+            </span>
+            <div
+              aria-disabled="false"
+              aria-label="+ Taxes (T)"
+              class="arrow arrow__upwards "
+              data-testid="arrow-increase"
+              data-tooltip-html="
+    <p>
+      The government charges more taxes and people have less surplus income to demand goods
+      <ul>
+        <li>&darr; Consumption (C)</li>
+        <li>&darr; Interest Rate (i)</li>
+        <li>&darr; Output or GDP (Y) (In equilibrium Y = Z (Demand for goods))</li>
+        <li>&larr; The IS Curve shifts to the left</li>
+      </ul>
+    </p>
+  "
+              id="taxest-increase"
+              role="button"
+            >
+              ↑
+            </div>
+            <div
+              aria-disabled="false"
+              aria-label="- Taxes (T)"
+              class="arrow arrow__downwards "
+              data-testid="arrow-decrease"
+              data-tooltip-html="
+    <p>
+      The government charges less taxes and people have more surplus income to demand goods
+      <ul>
+        <li>&uarr; Consumption (C)</li>
+        <li>&uarr; Interest Rate (i)</li>
+        <li>&uarr; Output or GDP (Y) (In equilibrium Y = Z (Demand for goods))</li>
+        <li>&rarr; The IS Curve shifts to the right</li>
+      </ul>
+    </p>
+  "
+              id="taxest-decrease"
+              role="button"
+            >
+              ↓
+            </div>
+          </div>
+          <div
+            class="variable-input"
+          >
+            <span>
+              Investment (I)
+            </span>
+            <div
+              aria-disabled="false"
+              aria-label="+ Investment (I)"
+              class="arrow arrow__upwards "
+              data-testid="arrow-increase"
+              data-tooltip-html="
+    <p>
+      Higher demand for capital goods, hence higher Aggregate Demand
+      <ul>
+        <li>&uarr; Consumption (C)</li>
+        <li>&uarr; Interest Rate (i)</li>
+        <li>&uarr; Output or GDP (Y) (In equilibrium Y = Z (Demand for goods))</li>
+        <li>&rarr; The IS Curve shifts to the right</li>
+      </ul>
+    </p>
+  "
+              id="investmenti-increase"
+              role="button"
+            >
+              ↑
+            </div>
+            <div
+              aria-disabled="false"
+              aria-label="- Investment (I)"
+              class="arrow arrow__downwards "
+              data-testid="arrow-decrease"
+              data-tooltip-html="
+    <p>
+      Lower demand for capital goods, hence lower Aggregate Demand
+      <ul>
+        <li>&darr; Consumption (C)</li>
+        <li>&darr; Interest Rate (i)</li>
+        <li>&darr; Output or GDP (Y) (In equilibrium Y = Z (Demand for goods))</li>
+        <li>&larr; The IS Curve shifts to the left</li>
+      </ul>
+    </p>
+  "
+              id="investmenti-decrease"
+              role="button"
+            >
+              ↓
+            </div>
+          </div>
+          <div
+            class="variable-input"
+          >
+            <span>
+              Public Expenditure (G)
+            </span>
+            <div
+              aria-disabled="false"
+              aria-label="+ Public Expenditure (G)"
+              class="arrow arrow__upwards "
+              data-testid="arrow-increase"
+              data-tooltip-html="
+    <p>
+      The government demands more goods and services, hence higher Aggregate Demand
+      <ul>
+        <li>&uarr; Consumption (C)</li>
+        <li>&uarr; Interest Rate (i)</li>
+        <li>&uarr; Output or GDP (Y) (In equilibrium Y = Z (Demand for goods))</li>
+        <li>&rarr; The IS Curve shifts to the right</li>
+      </ul>
+    </p>
+  "
+              id="publicexpenditureg-increase"
+              role="button"
+            >
+              ↑
+            </div>
+            <div
+              aria-disabled="false"
+              aria-label="- Public Expenditure (G)"
+              class="arrow arrow__downwards "
+              data-testid="arrow-decrease"
+              data-tooltip-html="
+    <p>
+      The government demands fewer goods and services, hence lower Aggregate Demand
+      <ul>
+        <li>&darr; Consumption (C)</li>
+        <li>&darr; Interest Rate (i)</li>
+        <li>&darr; Output or GDP (Y) (In equilibrium Y = Z (Demand for goods))</li>
+        <li>&larr; The IS Curve shifts to the left</li>
+      </ul>
+    </p>
+  "
+              id="publicexpenditureg-decrease"
+              role="button"
+            >
+              ↓
+            </div>
+          </div>
+        </section>
+        <section
+          class="variables"
+        >
+          <div
+            class="variables__header"
+          >
+            <h2>
+              LM Curve
+            </h2>
+            <var>
+              M/P = Y ⋅ L(i)
+            </var>
+          </div>
+          <div
+            class="variable-input"
+          >
+            <span>
+              Money Supply (M)
+            </span>
+            <div
+              aria-disabled="false"
+              aria-label="+ Money Supply (M)"
+              class="arrow arrow__upwards "
+              data-testid="arrow-increase"
+              data-tooltip-html="
+    <p>
+      Increased money supply drives down the price of money, reflected in interest rates
+      <ul>
+        <li>&darr; Interest Rate (i)</li>
+        <li>&rarr; The LM Curve shifts to the right</li>
+      </ul>
+    </p>
+  "
+              id="moneysupplym-increase"
+              role="button"
+            >
+              ↑
+            </div>
+            <div
+              aria-disabled="false"
+              aria-label="- Money Supply (M)"
+              class="arrow arrow__downwards "
+              data-testid="arrow-decrease"
+              data-tooltip-html="
+    <p>
+      Lower money supply drives up the price of money, reflected in interest rates.
+      <ul>
+        <li>&uarr; Interest Rate (i)</li>
+        <li>&larr; The LM Curve shifts to the left</li>
+      </ul>
+    </p>
+  "
+              id="moneysupplym-decrease"
+              role="button"
+            >
+              ↓
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+  </article>
+</div>
+`;
+
+exports[`App renders correctly with Spanish locale 1`] = `
+<div>
+  <article
+    class="App"
+  >
+    <h1>
+      Modelo IS-LM
+    </h1>
+    <section
+      class="App__functions-section"
+    >
+      <canvas
+        aria-label="IS-LM"
+        class="functions-drawer"
+        height="500"
+        role="img"
+        width="500"
+      />
+      <section
+        class="App__variables-section"
+      >
+        <section
+          class="variables"
+        >
+          <div
+            class="variables__header"
+          >
+            <h2>
+              Relación IS
+            </h2>
+            <var>
+              Y = C(Y-T) + I(Y, i) + G
+            </var>
+          </div>
+          <div
+            class="variable-input"
+          >
+            <span>
+              Impuestos (T)
+            </span>
+            <div
+              aria-disabled="false"
+              aria-label="+ Impuestos (T)"
+              class="arrow arrow__upwards "
+              data-testid="arrow-increase"
+              data-tooltip-html="
+    <p>
+      El Estado cobra más impuestos y la gente tiene menor excedente de renta para demandar
+      bienes
+      <ul>
+        <li>&darr; Consumo (C)</li>
+        <li>&darr; Tipo de Interés (i)</li>
+        <li>&darr; Producción o PIB (Y) (En equilibrio Y = Z (Demanda de bienes))</li>
+        <li>&larr; La Curva IS se desplaza hacia la izquierda</li>
+      </ul>
+    </p>
+  "
+              id="impuestost-increase"
+              role="button"
+            >
+              ↑
+            </div>
+            <div
+              aria-disabled="false"
+              aria-label="- Impuestos (T)"
+              class="arrow arrow__downwards "
+              data-testid="arrow-decrease"
+              data-tooltip-html="
+    <p>
+      El Estado cobra menos impuestos y la gente tiene mayor excedente de renta para demandar
+      bienes
+      <ul>
+        <li>&uarr; Consumo (C)</li>
+        <li>&uarr; Tipo de Interés (i)</li>
+        <li>&uarr; Producción o PIB (Y) (En equilibrio Y = Z (Demanda de bienes))</li>
+        <li>&rarr; La Curva IS se desplaza hacia la derecha</li>
+      </ul>
+    </p>
+  "
+              id="impuestost-decrease"
+              role="button"
+            >
+              ↓
+            </div>
+          </div>
+          <div
+            class="variable-input"
+          >
+            <span>
+              Inversión (I)
+            </span>
+            <div
+              aria-disabled="false"
+              aria-label="+ Inversión (I)"
+              class="arrow arrow__upwards "
+              data-testid="arrow-increase"
+              data-tooltip-html="
+    <p>
+      Mayor demanda de bienes de capital, por lo tanto, es mayor la Demanda Agregada
+      <ul>
+        <li>&uarr; Consumo (C)</li>
+        <li>&uarr; Tipo de Interés (i)</li>
+        <li>&uarr; Producción o PIB (Y) (En equilibrio Y = Z (Demanda de bienes))</li>
+        <li>&rarr; La Curva IS se desplaza hacia la derecha</li>
+      </ul>
+    </p>
+  "
+              id="inversini-increase"
+              role="button"
+            >
+              ↑
+            </div>
+            <div
+              aria-disabled="false"
+              aria-label="- Inversión (I)"
+              class="arrow arrow__downwards "
+              data-testid="arrow-decrease"
+              data-tooltip-html="
+    <p>
+      Menor demanda de bienes de capital, por lo tanto, es menor la Demanda Agregada
+      <ul>
+        <li>&darr; Consumo (C)</li>
+        <li>&darr; Tipo de Interés (i)</li>
+        <li>&darr; Producción o PIB (Y) (En equilibrio Y = Z (Demanda de bienes))</li>
+        <li>&larr; La Curva IS se desplaza hacia la izquierda</li>
+      </ul>
+    </p>
+  "
+              id="inversini-decrease"
+              role="button"
+            >
+              ↓
+            </div>
+          </div>
+          <div
+            class="variable-input"
+          >
+            <span>
+              Gasto Público (G)
+            </span>
+            <div
+              aria-disabled="false"
+              aria-label="+ Gasto Público (G)"
+              class="arrow arrow__upwards "
+              data-testid="arrow-increase"
+              data-tooltip-html="
+    <p>
+      El Estado demanda más bienes y servicios, por lo tanto, es mayor la Demanda Agregada
+      <ul>
+        <li>&uarr; Consumo (C)</li>
+        <li>&uarr; Tipo de Interés (i)</li>
+        <li>&uarr; Producción o PIB (Y) (En equilibrio Y = Z (Demanda de bienes))</li>
+        <li>&rarr; La Curva IS se desplaza hacia la derecha</li>
+      </ul>
+    </p>
+  "
+              id="gastopblicog-increase"
+              role="button"
+            >
+              ↑
+            </div>
+            <div
+              aria-disabled="false"
+              aria-label="- Gasto Público (G)"
+              class="arrow arrow__downwards "
+              data-testid="arrow-decrease"
+              data-tooltip-html="
+    <p>
+      El Estado demanda menos bienes y servicios, por lo tanto, es menor la Demanda Agregada
+      <ul>
+        <li>&darr; Consumo (C)</li>
+        <li>&darr; Tipo de Interés (i)</li>
+        <li>&darr; Producción o PIB (Y) (En equilibrio Y = Z (Demanda de bienes))</li>
+        <li>&larr; La Curva IS se desplaza hacia la izquierda</li>
+      </ul>
+    </p>
+  "
+              id="gastopblicog-decrease"
+              role="button"
+            >
+              ↓
+            </div>
+          </div>
+        </section>
+        <section
+          class="variables"
+        >
+          <div
+            class="variables__header"
+          >
+            <h2>
+              Relación LM
+            </h2>
+            <var>
+              M/P = Y ⋅ L(i)
+            </var>
+          </div>
+          <div
+            class="variable-input"
+          >
+            <span>
+              Oferta Monetaria (M)
+            </span>
+            <div
+              aria-disabled="false"
+              aria-label="+ Oferta Monetaria (M)"
+              class="arrow arrow__upwards "
+              data-testid="arrow-increase"
+              data-tooltip-html="
+    <p>
+      Mayor oferta de dinero hace bajar su precio, reflejado en el tipo de interés
+      <ul>
+        <li>&darr; Tipo de Interés (i)</li>
+        <li>&rarr; La Curva LM se desplaza hacia la derecha</li>
+      </ul>
+    </p>
+  "
+              id="ofertamonetariam-increase"
+              role="button"
+            >
+              ↑
+            </div>
+            <div
+              aria-disabled="false"
+              aria-label="- Oferta Monetaria (M)"
+              class="arrow arrow__downwards "
+              data-testid="arrow-decrease"
+              data-tooltip-html="
+    <p>
+      Menor oferta de dinero hace subir su precio, reflejado en el tipo de interés
+      <ul>
+        <li>&uarr; Tipo de Interés (i)</li>
+        <li>&larr; La Curva LM se desplaza hacia la izquierda</li>
+      </ul>
+    </p>
+  "
+              id="ofertamonetariam-decrease"
+              role="button"
+            >
+              ↓
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+  </article>
+</div>
+`;

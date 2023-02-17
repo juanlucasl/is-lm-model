@@ -4,4 +4,4 @@ import es from "./messages/es";
 export const MESSAGES = {
   en,
   es,
-}
+};

@@ -1,6 +1,6 @@
 {
   "name": "is-lm-model",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "private": true,
   "author": "juanlucasl",
   "license": "Apache-2.0",
@@ -19,6 +19,13 @@
     "react-tooltip": "^5.7.5",
     "typescript": "^4.9.5"
   },
+  "devDependencies": {
+    "canvas": "^2.11.0",
+    "prettier": "^2.8.4",
+    "stylelint": "^15.1.0",
+    "stylelint-order": "^6.0.2",
+    "stylelint-prettier": "^2.0.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -34,6 +41,12 @@
       "react-app/jest"
     ]
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx,js,jsx}",
+      "!src/index.tsx"
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -44,11 +57,5 @@
       "last 1 chrome version",
       "last 1 firefox version"
     ]
-  },
-  "devDependencies": {
-    "prettier": "^2.8.4",
-    "stylelint": "^15.1.0",
-    "stylelint-order": "^6.0.2",
-    "stylelint-prettier": "^2.0.0"
   }
 }

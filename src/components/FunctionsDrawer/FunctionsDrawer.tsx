@@ -102,10 +102,12 @@ const FunctionsDrawer: React.FC<FunctionsDrawerProps> = ({
 
   return (
     <canvas
+      aria-label="IS-LM"
       className="functions-drawer"
-      ref={canvasRef}
-      width={GRAPH_SIZE}
       height={GRAPH_SIZE}
+      width={GRAPH_SIZE}
+      ref={canvasRef}
+      role="img"
     />
   );
 };

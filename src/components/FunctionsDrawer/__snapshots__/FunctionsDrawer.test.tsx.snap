@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FunctionsDrawer renders correctly 1`] = `
+<div>
+  <canvas
+    aria-label="IS-LM"
+    class="functions-drawer"
+    height="500"
+    role="img"
+    width="500"
+  />
+</div>
+`;
