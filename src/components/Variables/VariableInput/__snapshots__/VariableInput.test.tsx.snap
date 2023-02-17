@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VariableInput renders correctly 1`] = `
+<div>
+  <div
+    class="variable-input"
+  >
+    <span>
+      Mock Variable Input
+    </span>
+    <div
+      aria-disabled="false"
+      aria-label="+ Mock Variable Input"
+      class="arrow arrow__upwards "
+      data-testid="arrow-increase"
+      data-tooltip-html="Mock increase description"
+      id="mockvariableinput-increase"
+      role="button"
+    >
+      ↑
+    </div>
+    <div
+      aria-disabled="false"
+      aria-label="- Mock Variable Input"
+      class="arrow arrow__downwards "
+      data-testid="arrow-decrease"
+      data-tooltip-html="Mock decrease description"
+      id="mockvariableinput-decrease"
+      role="button"
+    >
+      ↓
+    </div>
+  </div>
+</div>
+`;

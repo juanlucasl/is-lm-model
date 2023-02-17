@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Variables renders correctly 1`] = `
+<div>
+  <section
+    class="variables"
+  >
+    <div
+      class="variable-input"
+    >
+      <span>
+        Mock Variable Input 1
+      </span>
+      <div
+        aria-disabled="false"
+        aria-label="+ Mock Variable Input 1"
+        class="arrow arrow__upwards "
+        data-testid="arrow-increase"
+        data-tooltip-html="Mock increase description 1"
+        id="mockvariableinput1-increase"
+        role="button"
+      >
+        ↑
+      </div>
+      <div
+        aria-disabled="false"
+        aria-label="- Mock Variable Input 1"
+        class="arrow arrow__downwards "
+        data-testid="arrow-decrease"
+        data-tooltip-html="Mock decrease description 1"
+        id="mockvariableinput1-decrease"
+        role="button"
+      >
+        ↓
+      </div>
+    </div>
+    <div
+      class="variable-input"
+    >
+      <span>
+        Mock Variable Input 2
+      </span>
+      <div
+        aria-disabled="false"
+        aria-label="+ Mock Variable Input 2"
+        class="arrow arrow__upwards "
+        data-testid="arrow-increase"
+        data-tooltip-html="Mock increase description 2"
+        id="mockvariableinput2-increase"
+        role="button"
+      >
+        ↑
+      </div>
+      <div
+        aria-disabled="false"
+        aria-label="- Mock Variable Input 2"
+        class="arrow arrow__downwards "
+        data-testid="arrow-decrease"
+        data-tooltip-html="Mock decrease description 2"
+        id="mockvariableinput2-decrease"
+        role="button"
+      >
+        ↓
+      </div>
+    </div>
+  </section>
+</div>
+`;
