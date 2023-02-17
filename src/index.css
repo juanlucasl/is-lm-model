@@ -31,6 +31,10 @@ h2 {
   font-size: 2rem;
 }
 
+ul {
+  list-style-position: inside;
+}
+
 code var {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }

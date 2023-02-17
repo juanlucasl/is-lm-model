@@ -1,6 +1,6 @@
 {
   "name": "is-lm-model",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": true,
   "author": "juanlucasl",
   "license": "Apache-2.0",
@@ -14,6 +14,7 @@
     "@types/react-dom": "^18.0.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-intl": "^6.2.8",
     "react-scripts": "5.0.1",
     "react-tooltip": "^5.7.5",
     "typescript": "^4.9.5"
