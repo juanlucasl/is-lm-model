@@ -24,7 +24,7 @@ export const Variables: React.FC<VariablesProps> = ({ variables, title, descript
       </div>
     )}
     {variables.map((variable) => (
-      <VariableInput variable={variable} />
+      <VariableInput variable={variable} key={variable.label} />
     ))}
   </section>
 );

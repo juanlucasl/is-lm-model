@@ -1,6 +1,7 @@
 /* SPDX-License-Identifier: Apache-2.0 */
 import "./App.css";
 import React, { useState } from "react";
+import { FormattedMessage, useIntl } from "react-intl";
 import FunctionsDrawer from "./FunctionsDrawer";
 import Variables from "./Variables";
 import {
@@ -8,18 +9,11 @@ import {
   CONSUMO_AUTONOMO,
   PROPENSION_MARGINAL_A_CONSUMIR,
   SENSIBILIDAD_DE_LA_DEMANDA_MONETARIA_AL_INTERES,
-  TAXES_INCREASE_DESCRIPTION,
-  MONEY_SUPPLY_DECREASE_DESCRIPTION,
-  MONEY_SUPPLY_INCREASE_DESCRIPTION,
-  PUBLIC_EXPENDITURE_INCREASE_DESCRIPTION,
-  INVESTMENT_INCREASE_DESCRIPTION,
-  INVESTMENT_DECREASE_DESCRIPTION,
-  PUBLIC_EXPENDITURE_DECREASE_DESCRIPTION,
-  TAXES_DECREASE_DESCRIPTION,
 } from "../constants";
 import { Variable } from "../models";
 
 function App() {
+  const intl = useIntl();
   /**
    *
    * Inversion (I): Sumatoria de inversión no residual (la compra de nuevas máquinas/plantas
@@ -55,23 +49,27 @@ function App() {
     {
       value: impuestos,
       setValue: setImpuestos,
-      label: "Impuestos (T)",
-      increaseDescription: TAXES_INCREASE_DESCRIPTION,
-      decreaseDescription: TAXES_DECREASE_DESCRIPTION,
+      label: intl.formatMessage({ id: "TAXES" }),
+      increaseDescription: intl.formatMessage({ id: "TAXES_INCREASE_DESCRIPTION" }),
+      decreaseDescription: intl.formatMessage({ id: "TAXES_DECREASE_DESCRIPTION" }),
     },
     {
       value: inversion,
       setValue: setInversion,
-      label: "Inversión (I)",
-      increaseDescription: INVESTMENT_INCREASE_DESCRIPTION,
-      decreaseDescription: INVESTMENT_DECREASE_DESCRIPTION,
+      label: intl.formatMessage({ id: "INVESTMENT" }),
+      increaseDescription: intl.formatMessage({ id: "INVESTMENT_INCREASE_DESCRIPTION" }),
+      decreaseDescription: intl.formatMessage({ id: "INVESTMENT_DECREASE_DESCRIPTION" }),
     },
     {
       value: gastoPublico,
       setValue: setGastoPublico,
-      label: "Gasto Público (G)",
-      increaseDescription: PUBLIC_EXPENDITURE_INCREASE_DESCRIPTION,
-      decreaseDescription: PUBLIC_EXPENDITURE_DECREASE_DESCRIPTION,
+      label: intl.formatMessage({ id: "PUBLIC_EXPENDITURE" }),
+      increaseDescription: intl.formatMessage({
+        id: "PUBLIC_EXPENDITURE_INCREASE_DESCRIPTION",
+      }),
+      decreaseDescription: intl.formatMessage({
+        id: "PUBLIC_EXPENDITURE_DECREASE_DESCRIPTION",
+      }),
     },
   ];
 
@@ -79,15 +77,17 @@ function App() {
     {
       value: ofertaMonetaria,
       setValue: setOfertaMonetaria,
-      label: "Oferta Monetaria (M)",
-      increaseDescription: MONEY_SUPPLY_INCREASE_DESCRIPTION,
-      decreaseDescription: MONEY_SUPPLY_DECREASE_DESCRIPTION,
+      label: intl.formatMessage({ id: "MONEY_SUPPLY" }),
+      increaseDescription: intl.formatMessage({ id: "MONEY_SUPPLY_INCREASE_DESCRIPTION" }),
+      decreaseDescription: intl.formatMessage({ id: "MONEY_SUPPLY_DECREASE_DESCRIPTION" }),
     },
   ];
 
   return (
     <article className="App">
-      <h1>Modelo IS-LM</h1>
+      <h1>
+        <FormattedMessage id="IS_LM_MODEL" />
+      </h1>
       <section className="App__functions-section">
         <FunctionsDrawer
           functionsToDraw={[funcionIS, funcionLM]}
@@ -97,12 +97,12 @@ function App() {
         <section className="App__variables-section">
           <Variables
             variables={variablesIS}
-            title="Relacion IS"
+            title={intl.formatMessage({ id: "IS_CURVE" })}
             description="Y = C(Y-T) + I(Y, i) + G"
           />
           <Variables
             variables={variablesLM}
-            title="Relacion LM"
+            title={intl.formatMessage({ id: "LM_CURVE" })}
             description="M/P = Y ⋅ L(i)"
           />
         </section>
