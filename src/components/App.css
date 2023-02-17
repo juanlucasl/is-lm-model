@@ -15,3 +15,20 @@
   flex-direction: column;
   gap: 2rem;
 }
+
+.App__anchor-icons {
+  bottom: 3rem;
+  display: flex;
+  float: right;
+  gap: 0.5rem;
+  position: relative;
+  right: 2rem;
+}
+
+.App__anchor-icons svg {
+  fill: black;
+  font-size: 1.6rem;
+  max-height: 1.6rem;
+  max-width: 1.6rem;
+  vertical-align: text-bottom;
+}

@@ -1,252 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App renders correctly 1`] = `
-<div>
-  <article
-    class="App"
-  >
-    <h1>
-      IS-LM Model
-    </h1>
-    <section
-      class="App__functions-section"
-    >
-      <canvas
-        aria-label="IS-LM"
-        class="functions-drawer"
-        height="500"
-        role="img"
-        width="500"
-      />
-      <section
-        class="App__variables-section"
-      >
-        <section
-          class="variables"
-        >
-          <div
-            class="variables__header"
-          >
-            <h2>
-              IS Curve
-            </h2>
-            <var>
-              Y = C(Y-T) + I(Y, i) + G
-            </var>
-          </div>
-          <div
-            class="variable-input"
-          >
-            <span>
-              Taxes (T)
-            </span>
-            <div
-              aria-disabled="false"
-              aria-label="+ Taxes (T)"
-              class="arrow arrow__upwards "
-              data-testid="arrow-increase"
-              data-tooltip-html="
-    <p>
-      The government charges more taxes and people have less surplus income to demand goods
-      <ul>
-        <li>&darr; Consumption (C)</li>
-        <li>&darr; Interest Rate (i)</li>
-        <li>&darr; Output or GDP (Y) (In equilibrium Y = Z (Demand for goods))</li>
-        <li>&larr; The IS Curve shifts to the left</li>
-      </ul>
-    </p>
-  "
-              id="taxest-increase"
-              role="button"
-            >
-              ↑
-            </div>
-            <div
-              aria-disabled="false"
-              aria-label="- Taxes (T)"
-              class="arrow arrow__downwards "
-              data-testid="arrow-decrease"
-              data-tooltip-html="
-    <p>
-      The government charges less taxes and people have more surplus income to demand goods
-      <ul>
-        <li>&uarr; Consumption (C)</li>
-        <li>&uarr; Interest Rate (i)</li>
-        <li>&uarr; Output or GDP (Y) (In equilibrium Y = Z (Demand for goods))</li>
-        <li>&rarr; The IS Curve shifts to the right</li>
-      </ul>
-    </p>
-  "
-              id="taxest-decrease"
-              role="button"
-            >
-              ↓
-            </div>
-          </div>
-          <div
-            class="variable-input"
-          >
-            <span>
-              Investment (I)
-            </span>
-            <div
-              aria-disabled="false"
-              aria-label="+ Investment (I)"
-              class="arrow arrow__upwards "
-              data-testid="arrow-increase"
-              data-tooltip-html="
-    <p>
-      Higher demand for capital goods, hence higher Aggregate Demand
-      <ul>
-        <li>&uarr; Consumption (C)</li>
-        <li>&uarr; Interest Rate (i)</li>
-        <li>&uarr; Output or GDP (Y) (In equilibrium Y = Z (Demand for goods))</li>
-        <li>&rarr; The IS Curve shifts to the right</li>
-      </ul>
-    </p>
-  "
-              id="investmenti-increase"
-              role="button"
-            >
-              ↑
-            </div>
-            <div
-              aria-disabled="false"
-              aria-label="- Investment (I)"
-              class="arrow arrow__downwards "
-              data-testid="arrow-decrease"
-              data-tooltip-html="
-    <p>
-      Lower demand for capital goods, hence lower Aggregate Demand
-      <ul>
-        <li>&darr; Consumption (C)</li>
-        <li>&darr; Interest Rate (i)</li>
-        <li>&darr; Output or GDP (Y) (In equilibrium Y = Z (Demand for goods))</li>
-        <li>&larr; The IS Curve shifts to the left</li>
-      </ul>
-    </p>
-  "
-              id="investmenti-decrease"
-              role="button"
-            >
-              ↓
-            </div>
-          </div>
-          <div
-            class="variable-input"
-          >
-            <span>
-              Public Expenditure (G)
-            </span>
-            <div
-              aria-disabled="false"
-              aria-label="+ Public Expenditure (G)"
-              class="arrow arrow__upwards "
-              data-testid="arrow-increase"
-              data-tooltip-html="
-    <p>
-      The government demands more goods and services, hence higher Aggregate Demand
-      <ul>
-        <li>&uarr; Consumption (C)</li>
-        <li>&uarr; Interest Rate (i)</li>
-        <li>&uarr; Output or GDP (Y) (In equilibrium Y = Z (Demand for goods))</li>
-        <li>&rarr; The IS Curve shifts to the right</li>
-      </ul>
-    </p>
-  "
-              id="publicexpenditureg-increase"
-              role="button"
-            >
-              ↑
-            </div>
-            <div
-              aria-disabled="false"
-              aria-label="- Public Expenditure (G)"
-              class="arrow arrow__downwards "
-              data-testid="arrow-decrease"
-              data-tooltip-html="
-    <p>
-      The government demands fewer goods and services, hence lower Aggregate Demand
-      <ul>
-        <li>&darr; Consumption (C)</li>
-        <li>&darr; Interest Rate (i)</li>
-        <li>&darr; Output or GDP (Y) (In equilibrium Y = Z (Demand for goods))</li>
-        <li>&larr; The IS Curve shifts to the left</li>
-      </ul>
-    </p>
-  "
-              id="publicexpenditureg-decrease"
-              role="button"
-            >
-              ↓
-            </div>
-          </div>
-        </section>
-        <section
-          class="variables"
-        >
-          <div
-            class="variables__header"
-          >
-            <h2>
-              LM Curve
-            </h2>
-            <var>
-              M/P = Y ⋅ L(i)
-            </var>
-          </div>
-          <div
-            class="variable-input"
-          >
-            <span>
-              Money Supply (M)
-            </span>
-            <div
-              aria-disabled="false"
-              aria-label="+ Money Supply (M)"
-              class="arrow arrow__upwards "
-              data-testid="arrow-increase"
-              data-tooltip-html="
-    <p>
-      Increased money supply drives down the price of money, reflected in interest rates
-      <ul>
-        <li>&darr; Interest Rate (i)</li>
-        <li>&rarr; The LM Curve shifts to the right</li>
-      </ul>
-    </p>
-  "
-              id="moneysupplym-increase"
-              role="button"
-            >
-              ↑
-            </div>
-            <div
-              aria-disabled="false"
-              aria-label="- Money Supply (M)"
-              class="arrow arrow__downwards "
-              data-testid="arrow-decrease"
-              data-tooltip-html="
-    <p>
-      Lower money supply drives up the price of money, reflected in interest rates.
-      <ul>
-        <li>&uarr; Interest Rate (i)</li>
-        <li>&larr; The LM Curve shifts to the left</li>
-      </ul>
-    </p>
-  "
-              id="moneysupplym-decrease"
-              role="button"
-            >
-              ↓
-            </div>
-          </div>
-        </section>
-      </section>
-    </section>
-  </article>
-</div>
-`;
-
 exports[`App renders correctly with English locale 1`] = `
 <div>
   <article
@@ -490,6 +243,53 @@ exports[`App renders correctly with English locale 1`] = `
         </section>
       </section>
     </section>
+    <div
+      class="App__anchor-icons"
+    >
+      <a
+        href="https://github.com/juanlucasl/is-lm-model"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <svg
+          aria-hidden="false"
+          aria-label="Source code in Github"
+          class="octicon octicon-mark-github"
+          fill="currentColor"
+          focusable="false"
+          height="16"
+          role="img"
+          style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"
+          />
+        </svg>
+      </a>
+      <a
+        href="https://www.apache.org/licenses/LICENSE-2.0"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <svg
+          aria-label="Apache License 2.0"
+          fill="currentColor"
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            Apache License 2.0
+          </title>
+          <path
+            d="M17.805 2.197v.066h.156v.44h.072v-.44h.156v-.066zm.9 0l-.175.353-.172-.353h-.087v.506h.067V2.3l.172.35h.045l.172-.35v.404h.066v-.506zm-4.257 1c-.204.31-.424.66-.66 1.06l-.04.062a44.457 44.457 0 00-1.265 2.29c-.187.36-.38.742-.577 1.146l2.267-.25c.66-.302.955-.578 1.242-.976a15.5 15.5 0 00.23-.342c.23-.363.46-.763.663-1.16.197-.386.37-.767.505-1.11.083-.22.15-.422.198-.6.042-.158.074-.307.1-.45-.884.15-1.965.295-2.668.33zM11.894 7.78l-.077.16c-.078.16-.157.32-.236.488-.086.18-.172.364-.26.552l-.132.287a75.265 75.265 0 00-1.427 3.3c-.163.397-.327.807-.493 1.23-.15.38-.297.765-.45 1.164l-.02.06c-.15.396-.3.802-.453 1.22l-.01.027.72-.08a.213.213 0 01-.042-.006c.863-.106 2.01-.75 2.75-1.547.342-.367.652-.8.94-1.306.213-.377.413-.795.604-1.258.168-.405.328-.843.48-1.318-.196.105-.423.18-.673.235a2.184 2.184 0 01-.273.046c.806-.31 1.314-.905 1.683-1.64a2.816 2.816 0 01-.968.428c-.06.012-.116.022-.174.03l-.043.006h.002c.278-.118.514-.248.718-.403a2.571 2.571 0 00.637-.698l.063-.104.077-.154a8.107 8.107 0 00.367-.85l.03-.088a3.04 3.04 0 00.123-.463.733.733 0 01-.094.065c-.243.145-.66.277-.996.34l.663-.074-.664.073h-.017l-.1.017c.006-.003.01-.006.017-.008l-2.265.25-.013.022zM8.27 16.45c-.117.323-.236.654-.355.992l-.005.015c-.016.046-.032.094-.05.142-.08.227-.15.432-.31.9.264.12.475.435.675.793a1.44 1.44 0 00-.466-.99c1.293.06 2.41-.27 2.99-1.217.05-.084.096-.173.14-.268-.26.333-.59.474-1.2.44 0 0-.004 0-.005.002l.004-.002c.9-.404 1.354-.79 1.754-1.433.094-.153.186-.32.28-.503-.788.81-1.702 1.04-2.664.865l-.72.078a6.43 6.43 0 00-.067.183zM15.42.112c-.376.222-1 .85-1.748 1.763l.686 1.294c.48-.687.97-1.307 1.462-1.836l.058-.062c-.02.02-.04.04-.057.062-.16.176-.644.74-1.375 1.863.703-.035 1.784-.18 2.666-.33.262-1.47-.258-2.142-.258-2.142s-.66-1.07-1.436-.61zm-3.084 6.402a40.253 40.253 0 011.306-2.26l.04-.064c.224-.352.45-.693.677-1.02l-.685-1.293-.157.192c-.197.245-.403.51-.613.79a39.853 39.853 0 00-2.016 2.97l-.022.038.893 1.763c.19-.378.38-.752.575-1.118zm-3.73 8.32c.158-.406.319-.81.483-1.225.156-.394.32-.79.484-1.19a91.133 91.133 0 011.6-3.604l.205-.424c.12-.243.237-.485.36-.724a.125.125 0 01.02-.04l-.895-1.763-.044.07c-.207.34-.414.687-.617 1.042a38.056 38.056 0 00-1.092 2.04l-.094.193a24.573 24.573 0 00-1.258 3.087 18.492 18.492 0 00-.52 1.997l.896 1.77c.117-.317.24-.638.364-.963zm-1.376-.476a13.38 13.38 0 00-.234 1.692c0 .02-.004.04-.005.06-.28-.45-1.03-.888-1.026-.884.537.778.944 1.55 1.005 2.31-.29.058-.684-.027-1.14-.195.475.436.83.556.97.588-.434.03-.89.328-1.346.67.668-.27 1.21-.38 1.596-.29-.61 1.74-1.23 3.655-1.843 5.69a.538.538 0 00.364-.354c.11-.368.84-2.786 1.978-5.965l.097-.27.028-.078c.12-.332.246-.672.374-1.02l.09-.237v-.004L7.24 14.3c-.003.02-.01.04-.012.06z"
+          />
+        </svg>
+      </a>
+    </div>
   </article>
 </div>
 `;
@@ -739,6 +539,53 @@ exports[`App renders correctly with Spanish locale 1`] = `
         </section>
       </section>
     </section>
+    <div
+      class="App__anchor-icons"
+    >
+      <a
+        href="https://github.com/juanlucasl/is-lm-model"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <svg
+          aria-hidden="false"
+          aria-label="Source code in Github"
+          class="octicon octicon-mark-github"
+          fill="currentColor"
+          focusable="false"
+          height="16"
+          role="img"
+          style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"
+          />
+        </svg>
+      </a>
+      <a
+        href="https://www.apache.org/licenses/LICENSE-2.0"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <svg
+          aria-label="Apache License 2.0"
+          fill="currentColor"
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            Apache License 2.0
+          </title>
+          <path
+            d="M17.805 2.197v.066h.156v.44h.072v-.44h.156v-.066zm.9 0l-.175.353-.172-.353h-.087v.506h.067V2.3l.172.35h.045l.172-.35v.404h.066v-.506zm-4.257 1c-.204.31-.424.66-.66 1.06l-.04.062a44.457 44.457 0 00-1.265 2.29c-.187.36-.38.742-.577 1.146l2.267-.25c.66-.302.955-.578 1.242-.976a15.5 15.5 0 00.23-.342c.23-.363.46-.763.663-1.16.197-.386.37-.767.505-1.11.083-.22.15-.422.198-.6.042-.158.074-.307.1-.45-.884.15-1.965.295-2.668.33zM11.894 7.78l-.077.16c-.078.16-.157.32-.236.488-.086.18-.172.364-.26.552l-.132.287a75.265 75.265 0 00-1.427 3.3c-.163.397-.327.807-.493 1.23-.15.38-.297.765-.45 1.164l-.02.06c-.15.396-.3.802-.453 1.22l-.01.027.72-.08a.213.213 0 01-.042-.006c.863-.106 2.01-.75 2.75-1.547.342-.367.652-.8.94-1.306.213-.377.413-.795.604-1.258.168-.405.328-.843.48-1.318-.196.105-.423.18-.673.235a2.184 2.184 0 01-.273.046c.806-.31 1.314-.905 1.683-1.64a2.816 2.816 0 01-.968.428c-.06.012-.116.022-.174.03l-.043.006h.002c.278-.118.514-.248.718-.403a2.571 2.571 0 00.637-.698l.063-.104.077-.154a8.107 8.107 0 00.367-.85l.03-.088a3.04 3.04 0 00.123-.463.733.733 0 01-.094.065c-.243.145-.66.277-.996.34l.663-.074-.664.073h-.017l-.1.017c.006-.003.01-.006.017-.008l-2.265.25-.013.022zM8.27 16.45c-.117.323-.236.654-.355.992l-.005.015c-.016.046-.032.094-.05.142-.08.227-.15.432-.31.9.264.12.475.435.675.793a1.44 1.44 0 00-.466-.99c1.293.06 2.41-.27 2.99-1.217.05-.084.096-.173.14-.268-.26.333-.59.474-1.2.44 0 0-.004 0-.005.002l.004-.002c.9-.404 1.354-.79 1.754-1.433.094-.153.186-.32.28-.503-.788.81-1.702 1.04-2.664.865l-.72.078a6.43 6.43 0 00-.067.183zM15.42.112c-.376.222-1 .85-1.748 1.763l.686 1.294c.48-.687.97-1.307 1.462-1.836l.058-.062c-.02.02-.04.04-.057.062-.16.176-.644.74-1.375 1.863.703-.035 1.784-.18 2.666-.33.262-1.47-.258-2.142-.258-2.142s-.66-1.07-1.436-.61zm-3.084 6.402a40.253 40.253 0 011.306-2.26l.04-.064c.224-.352.45-.693.677-1.02l-.685-1.293-.157.192c-.197.245-.403.51-.613.79a39.853 39.853 0 00-2.016 2.97l-.022.038.893 1.763c.19-.378.38-.752.575-1.118zm-3.73 8.32c.158-.406.319-.81.483-1.225.156-.394.32-.79.484-1.19a91.133 91.133 0 011.6-3.604l.205-.424c.12-.243.237-.485.36-.724a.125.125 0 01.02-.04l-.895-1.763-.044.07c-.207.34-.414.687-.617 1.042a38.056 38.056 0 00-1.092 2.04l-.094.193a24.573 24.573 0 00-1.258 3.087 18.492 18.492 0 00-.52 1.997l.896 1.77c.117-.317.24-.638.364-.963zm-1.376-.476a13.38 13.38 0 00-.234 1.692c0 .02-.004.04-.005.06-.28-.45-1.03-.888-1.026-.884.537.778.944 1.55 1.005 2.31-.29.058-.684-.027-1.14-.195.475.436.83.556.97.588-.434.03-.89.328-1.346.67.668-.27 1.21-.38 1.596-.29-.61 1.74-1.23 3.655-1.843 5.69a.538.538 0 00.364-.354c.11-.368.84-2.786 1.978-5.965l.097-.27.028-.078c.12-.332.246-.672.374-1.02l.09-.237v-.004L7.24 14.3c-.003.02-.01.04-.012.06z"
+          />
+        </svg>
+      </a>
+    </div>
   </article>
 </div>
 `;

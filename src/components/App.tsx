@@ -2,6 +2,8 @@
 import "./App.css";
 import React, { useState } from "react";
 import { FormattedMessage, useIntl } from "react-intl";
+import { MarkGithubIcon } from "@primer/octicons-react";
+import { Siapache } from "@icons-pack/react-simple-icons";
 import FunctionsDrawer from "./FunctionsDrawer";
 import Variables from "./Variables";
 import {
@@ -107,6 +109,14 @@ function App() {
           />
         </section>
       </section>
+      <div className="App__anchor-icons">
+        <a href="https://github.com/juanlucasl/is-lm-model" target="_blank" rel="noreferrer">
+          <MarkGithubIcon aria-label="Source code in Github"/>
+        </a>
+        <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noreferrer">
+          <Siapache aria-label="Apache License 2.0" title="Apache License 2.0"/>
+        </a>
+      </div>
     </article>
   );
 }
