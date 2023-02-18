@@ -244,9 +244,10 @@ exports[`App renders correctly with English locale 1`] = `
       </section>
     </section>
     <div
-      class="App__anchor-icons"
+      class="App__anchors"
     >
       <a
+        class="App__anchor-icon"
         href="https://github.com/juanlucasl/is-lm-model"
         rel="noreferrer"
         target="_blank"
@@ -269,6 +270,7 @@ exports[`App renders correctly with English locale 1`] = `
         </svg>
       </a>
       <a
+        class="App__anchor-icon"
         href="https://www.apache.org/licenses/LICENSE-2.0"
         rel="noreferrer"
         target="_blank"
@@ -540,9 +542,10 @@ exports[`App renders correctly with Spanish locale 1`] = `
       </section>
     </section>
     <div
-      class="App__anchor-icons"
+      class="App__anchors"
     >
       <a
+        class="App__anchor-icon"
         href="https://github.com/juanlucasl/is-lm-model"
         rel="noreferrer"
         target="_blank"
@@ -565,6 +568,7 @@ exports[`App renders correctly with Spanish locale 1`] = `
         </svg>
       </a>
       <a
+        class="App__anchor-icon"
         href="https://www.apache.org/licenses/LICENSE-2.0"
         rel="noreferrer"
         target="_blank"

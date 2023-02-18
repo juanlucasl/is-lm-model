@@ -4,17 +4,17 @@ import React, { useState } from "react";
 import { FormattedMessage, useIntl } from "react-intl";
 import { MarkGithubIcon } from "@primer/octicons-react";
 import { Siapache } from "@icons-pack/react-simple-icons";
-import FunctionsDrawer from "./FunctionsDrawer";
-import Variables from "./Variables";
+import FunctionsDrawer from "../FunctionsDrawer";
+import Variables from "../Variables";
 import {
   DEMANDA_BASE_DE_DINERO,
   CONSUMO_AUTONOMO,
   PROPENSION_MARGINAL_A_CONSUMIR,
   SENSIBILIDAD_DE_LA_DEMANDA_MONETARIA_AL_INTERES,
-} from "../constants";
-import { Variable } from "../models";
+} from "../../constants";
+import { Variable } from "../../models";
 
-function App() {
+const App: React.FC = () => {
   const intl = useIntl();
   /**
    *

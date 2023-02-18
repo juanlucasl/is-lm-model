@@ -2,9 +2,9 @@
 import React from "react";
 import { screen } from "@testing-library/react";
 import App from "./App";
-import { MESSAGES } from "../lang/messages";
-import { Locales } from "../lang/locales";
-import { renderWithIntlProvider } from "../utils/test-utils";
+import { MESSAGES } from "../../lang/messages";
+import { Locales } from "../../lang/locales";
+import { renderWithIntlProvider } from "../../utils/test-utils";
 
 describe("App", () => {
   it("renders correctly with English locale", () => {
