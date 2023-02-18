@@ -2,8 +2,6 @@
 import "./App.css";
 import React, { useState } from "react";
 import { FormattedMessage, useIntl } from "react-intl";
-import { MarkGithubIcon } from "@primer/octicons-react";
-import { Siapache } from "@icons-pack/react-simple-icons";
 import FunctionsDrawer from "../FunctionsDrawer";
 import Variables from "../Variables";
 import {
@@ -13,6 +11,8 @@ import {
   SENSIBILIDAD_DE_LA_DEMANDA_MONETARIA_AL_INTERES,
 } from "../../constants";
 import { Variable } from "../../models";
+import MarkGithubIcon from "../MarkGithubIcon";
+import SiApacheIcon from "../SiApacheIcon";
 
 const App: React.FC = () => {
   const intl = useIntl();
@@ -116,7 +116,7 @@ const App: React.FC = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <MarkGithubIcon aria-label="Source code in Github" />
+          <MarkGithubIcon />
         </a>
         <a
           className="App__anchor-icon"
@@ -124,11 +124,11 @@ const App: React.FC = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <Siapache aria-label="Apache License 2.0" title="Apache License 2.0" />
+          <SiApacheIcon />
         </a>
       </div>
     </article>
   );
-}
+};
 
 export default App;

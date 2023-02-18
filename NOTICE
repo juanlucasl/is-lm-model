@@ -1,0 +1,32 @@
+NOTICE for is-lm-model
+
+This product is licensed under the Apache-2.0 License. See the LICENSE file for more details.
+
+This product includes software developed by juanl https://github.com/juanlucasl.
+
+This product includes the following third-party software:
+
+    @icons-pack/react-simple-icons (https://github.com/icons-pack/react-simple-icons) - licensed under the MIT License
+    @primer/octicons-react (https://github.com/primer/octicons) - licensed under the MIT License
+    @testing-library/* (https://testing-library.com) - licensed under the MIT License
+    React (https://reactjs.org) - licensed under the MIT License
+    React DOM (https://reactjs.org/docs/react-dom.html) - licensed under the MIT License
+    react-intl (https://formatjs.io/docs/react-intl/) - licensed under the BSD-3-Clause License
+    react-scripts (https://create-react-app.dev/docs/available-scripts/) - licensed under the MIT License
+    react-tooltip (https://github.com/wwayne/react-tooltip) - licensed under the MIT License
+    TypeScript (https://www.typescriptlang.org) - licensed under the Apache-2.0 License
+
+This product also includes the following development tools:
+
+    Canvas (https://github.com/Automattic/node-canvas) - licensed under the MIT License
+    concurrently (https://github.com/open-cli-tools/concurrently) - licensed under the MIT License
+    cross-env (https://github.com/kentcdodds/cross-env) - licensed under the MIT License
+    Electron (https://www.electronjs.org) - licensed under the MIT License
+    electron-builder (https://www.electron.build) - licensed under the MIT License
+    electronmon (https://github.com/catdad/electronmon) - licensed under the ISC License
+    Prettier (https://prettier.io) - licensed under the MIT License
+    rimraf (https://github.com/isaacs/rimraf) - licensed under the ISC License
+    Stylelint (https://stylelint.io) - licensed under the MIT License
+    stylelint-order (https://github.com/hudochenkov/stylelint-order) - licensed under the MIT License
+    stylelint-prettier (https://github.com/prettier/stylelint-prettier) - licensed under the MIT License
+    wait-on (https://github.com/jeffbski/wait-on) - licensed under the MIT License
