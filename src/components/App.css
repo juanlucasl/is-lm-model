@@ -16,7 +16,7 @@
   gap: 2rem;
 }
 
-.App__anchor-icons {
+.App__anchors {
   bottom: 3rem;
   display: flex;
   float: right;
@@ -25,10 +25,15 @@
   right: 2rem;
 }
 
-.App__anchor-icons svg {
+.App__anchor-icon {
+  color: black;
   fill: black;
   font-size: 1.6rem;
   max-height: 1.6rem;
   max-width: 1.6rem;
   vertical-align: text-bottom;
+}
+
+.App__anchor-icon:active {
+  transform: scale(0.8);
 }
