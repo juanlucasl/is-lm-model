@@ -1,6 +1,6 @@
 {
   "name": "is-lm-model",
-  "version": "0.4.3",
+  "version": "1.0.0",
   "private": true,
   "license": "Apache-2.0",
   "author": {
@@ -8,9 +8,10 @@
     "email": "33398520+juanlucasl@users.noreply.github.com",
     "url": "https://github.com/juanlucasl"
   },
+  "description": "App to draw an IS-LM Model, and see how changes in investment, public expenditure, taxes, and money supply affect it.",
+  "main": "public/electron.js",
+  "homepage": "./",
   "dependencies": {
-    "@icons-pack/react-simple-icons": "^6.3.0",
-    "@primer/octicons-react": "^17.12.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -27,19 +28,69 @@
   },
   "devDependencies": {
     "canvas": "^2.11.0",
+    "concurrently": "^7.6.0",
+    "cross-env": "^7.0.3",
+    "electron": "^23.1.0",
+    "electron-builder": "^23.6.0",
+    "electronmon": "^2.0.2",
     "prettier": "^2.8.4",
+    "rimraf": "^4.1.2",
     "stylelint": "^15.1.0",
     "stylelint-order": "^6.0.2",
-    "stylelint-prettier": "^2.0.0"
+    "stylelint-prettier": "^2.0.0",
+    "wait-on": "^7.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prettier:fix": "prettier --write '**/*.{ts,tsx,js,jsx,json,md,css}'",
-    "lint:css:fix": "stylelint '**/*.css' --fix",
-    "format:code": "npm run prettier:fix && npm run lint:css:fix"
+    "clean": "rimraf ./build ./dist",
+    "start:electron": "concurrently -k \"cross-env BROWSER=none npm start\" \"wait-on http://localhost:3000 && electronmon .\"",
+    "build:electron:linux": "npm run clean && npm run build && electron-builder build -l -c.extraMetadata.main=build/electron.js",
+    "build:electron:win": "npm run clean && npm run build && electron-builder build -w -c.extraMetadata.main=build/electron.js",
+    "build:electron:mac": "npm run clean && npm run build && electron-builder build -m -c.extraMetadata.main=build/electron.js",
+    "prettier:fix": "prettier --write 'src/**/*.{ts,tsx,js,jsx,json,md,css}'",
+    "eslint:fix": "eslint --fix 'src/**/*.{ts,tsx,js,jsx}'",
+    "lint:css:fix": "stylelint 'src/**/*.css' --fix",
+    "format-code": "npm run prettier:fix && npm run eslint:fix && npm run lint:css:fix"
+  },
+  "engines": {
+    "node": ">=16",
+    "npm": ">=8"
+  },
+  "build": {
+    "appId": "com.juanlucasl.is-lm-model",
+    "productName": "IS-LM",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "public"
+    },
+    "publish": {
+      "provider": "github"
+    },
+    "linux": {
+      "target": "appImage"
+    },
+    "win": {
+      "target": "portable"
+    },
+    "mac": {
+      "target": "dmg"
+    }
+  },
+  "electronmon": {
+    "patterns": [
+      "!dist",
+      "!dist/**/*",
+      "!build",
+      "!build/**/*",
+      "!coverage",
+      "!coverage/**/*"
+    ]
   },
   "eslintConfig": {
     "extends": [
@@ -55,11 +106,13 @@
   },
   "browserslist": {
     "production": [
+      "last 1 electron version",
       ">0.2%",
       "not dead",
       "not op_mini all"
     ],
     "development": [
+      "last 1 electron version",
       "last 1 chrome version",
       "last 1 firefox version"
     ]

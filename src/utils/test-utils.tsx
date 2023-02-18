@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: Apache-2.0 */
 import { ReactElement } from "react";
 import { IntlProvider } from "react-intl";
 import { render, RenderResult } from "@testing-library/react";

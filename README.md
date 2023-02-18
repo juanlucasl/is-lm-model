@@ -2,7 +2,25 @@
 
 This App draws an IS (Investment-Savings) function and an LM (Liquidity-Money) function, and see how changes in investment, public expenditure, taxes, and money supply affect them.
 
+![Example GIF showing how to use the app](usage.gif)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Quick start
+
+### Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- `node.js`: `v16` or later.
+- `npm`: `v8` or later.
+
+### Launching the app
+
+1. Download or clone the repository and run `npm install` in the root directory.
+2. Run `npm start` to launch the app in your web browser.
+
+You can also launch the app as a desktop executable running `npm run start:electron` or `npm run build:electron:` for your operative system.
 
 ## Available Scripts
 
@@ -40,6 +58,44 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+### `npm run clean`
+
+Deletes the `build` and `dist` folders.
+
+### `npm run start:electron`
+
+Runs the app in development mode and launches the Electron app. It uses `concurrently` to run two processes simultaneously: `npm start` to start the React app and `electronmon` to start the Electron app.
+
+The `wait-on` command is used to wait until the React app is ready at `http://localhost:3000` before launching the Electron app.
+
+### `npm run build:electron:linux`
+
+Cleans the project directory, builds the React app, and packages it into a Linux executable using Electron Builder.
+
+### `npm run build:electron:win`
+
+Cleans the project directory, builds the React app, and packages it into a Windows executable using Electron Builder.
+
+### `npm run build:electron:mac`
+
+Cleans the project directory, builds the React app, and packages it into a macOS executable using Electron Builder.
+
+### `npm run prettier:fix`
+
+Formats the code using `prettier`.
+
+### `npm run eslint:fix`
+
+Fixes linting errors in Javascript or Typescript files using `ESLint`.
+
+### `npm run lint:css:fix`
+
+Fixes linting errors in CSS files using `stylelint`.
+
+### `npm run format-code`
+
+Runs `npm run prettier:fix`, `npm run eslint:fix` and `npm run lint:css:fix`.
 
 ## Learn More
 

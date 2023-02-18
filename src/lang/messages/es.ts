@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: Apache-2.0 */
 const CONSUMPTION_UP = "&uarr; Consumo (C)";
 const CONSUMPTION_DOWN = "&darr; Consumo (C)";
 
