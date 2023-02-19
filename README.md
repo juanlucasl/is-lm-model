@@ -8,6 +8,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Quick start
 
+Click [here](https://github.com/juanlucasl/is-lm-model/releases/latest/download/IS-LM-1.0.0-build.zip) to download a zip file with the app. You can then extract the contents of the zip file and open the `index.html` file in your browser to view the app.
+
 ### Prerequisites
 
 Before you begin, ensure you have met the following requirements:
