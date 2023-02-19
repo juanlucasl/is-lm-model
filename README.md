@@ -73,15 +73,15 @@ The `wait-on` command is used to wait until the React app is ready at `http://lo
 
 ### `npm run build:electron:linux`
 
-Cleans the project directory, builds the React app, and packages it into a Linux executable using Electron Builder.
+Cleans the build directory, builds the app, and packages it into a Linux executable using Electron Builder.
 
 ### `npm run build:electron:win`
 
-Cleans the project directory, builds the React app, and packages it into a Windows executable using Electron Builder.
+Cleans the build directory, builds the app, and packages it into a Windows executable using Electron Builder.
 
 ### `npm run build:electron:mac`
 
-Cleans the project directory, builds the React app, and packages it into a macOS executable using Electron Builder.
+Cleans the build directory, builds the app, and packages it into a macOS executable using Electron Builder.
 
 ### `npm run prettier:fix`
 
