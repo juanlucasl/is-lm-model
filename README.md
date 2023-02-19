@@ -1,6 +1,6 @@
 # IS-LM Model App
 
-This App draws an IS (Investment-Savings) function and an LM (Liquidity-Money) function, and see how changes in investment, public expenditure, taxes, and money supply affect them.
+This App draws an IS (Investment-Savings) function and an LM (Liquidity-Money) function, and shows how changes in investment, public expenditure, taxes, and money supply affect them.
 
 ![Example GIF showing how to use the app](usage.gif)
 
